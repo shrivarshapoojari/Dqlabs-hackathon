@@ -75,6 +75,8 @@ const Second = ({children}) => {
         <li> <Link to='/about' className='justify-between text-white hover:text-white hover:bg-purple-500'>About Us</Link> </li>
         <li> <Link to='/contact' className='justify-between text-white hover:text-white hover:bg-purple-500'>Contact Us</Link> </li>
         <li><Link to='/courses' className='justify-between text-white hover:text-white hover:bg-purple-500'>Courses</Link></li>
+        <li><Link to='/job' className='justify-between text-white hover:text-white hover:bg-purple-500'>Find a Job</Link></li>
+
         {
             isLoggedIn && role=="ADMIN" &&
             (<li>
