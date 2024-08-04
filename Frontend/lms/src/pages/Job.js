@@ -15,7 +15,7 @@ const Job = () => {
     setError(null);
     toast.loading('Searching...');
     try {
-      const response = await axios.get('http://localhost:5000/api/jobs/search', {
+      const response = await axios.get('https://graminshakti.onrender.com/api/jobs/search', {
         params: {
           query,
           location,
