@@ -1,3 +1,6 @@
+ 
+
+
 import React from 'react'
 import Second from '../layouts/Second'
 import aboutMainimg from '../Assets/Images/aboutMainImage.png'
@@ -9,11 +12,11 @@ import newton from '../Assets/Images/einstein.png'
 const Aboutus = () => {
   return (
     <Second>
-       <div className='flex flex-col text-white pl-20 pt-20'>
-           <div className='flex items-center gap-5 mx-10'>
-                <section className='w-1/2 space-y-10 '>
+       <div className='flex flex-col text-white md:pl-20 pt-20'>
+           <div className='flex md:flex-row flex-col items-center md:gap-5 md:mx-10'>
+                <section className='md:w-1/2 space-y-10 px-10'>
                      <h1 className='text-5xl text-purple-500 font-semibold' >
-                            Affordable and Quality Education
+                            Affordable and Quality Education 
 
                      </h1>
                      <p className='text-xl text-gray-200'>
@@ -31,7 +34,7 @@ const Aboutus = () => {
 
                 </div>
            </div>
-            <div className="carousel w-1/2 my-10 mx-auto">
+            <div className="carousel md:w-1/2 my-10 mx-auto ">
                         <div id="slide1" className="carousel-item relative w-full">
                             <div className='flex flex-col items-center justify-center gap-4 px-[15%]'>
                                     <img src={apj} className="w-40 rounded-full border-2 border-purple-400" />
