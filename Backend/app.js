@@ -16,7 +16,7 @@ import  errorMiddleware from   './middlewares/error.middleware.js'
 import  connectToDB from "./config/dbConnection.js"
 import morgan  from 'morgan'
 app.use(express.json())
-const allowedOrigin = 'http://localhost:3000';
+const allowedOrigin = 'https://graminshakthi.vercel.app';
  
 app.use(cors({
     origin: allowedOrigin,
