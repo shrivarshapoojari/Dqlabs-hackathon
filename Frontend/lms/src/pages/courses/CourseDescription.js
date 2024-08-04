@@ -1,22 +1,40 @@
-import React from 'react'
+import React, { useEffect } from 'react'
  
 import Second from '../../layouts/Second'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { getUserData } from '../../redux/slices/authSlice'
+import { useDispatch} from 'react-redux'
 const CourseDescription = () => {
 
     const {state}=useLocation() // acces the data sent by course card
     const navigate=useNavigate();
 
+const isLoggedIn=useSelector((state)=>state?.auth?.isLoggedIn)
+const dispatch=useDispatch()
+  async function loadUser(){
+   if(isLoggedIn)
+   {
+    await dispatch(getUserData())
+   }
+      
+    }
+   
+   
+    useEffect(()=>{
+
+      loadUser();
+    },[])
+ 
     const {role , data }=useSelector((state)=>state.auth)
     
 
   return (
     <Second>
-      <div className='flex items-center justify-center w-3/4'>
+      <div className='flex items-center justify-center md:w-3/4 w-full'>
           <div className='min-h-[90vh] pt-12 px-20 flex flex-col items-center justify-center text-white '>
-           <div className='grid grid-rows-2 gap-10 py-10 relative md:grid-cols-2 px-5 '>
-                <div className='space-y-5 px-10 py-5  '>
+           <div className='sm:grid sm:gap-10 py-10 relative sm:grid-cols-2 px-5 '>
+                <div className='space-y-5 px-10 py-5 mb-5  '>
                     <img
                         src={state?.thumbnail?.secure_url}
                         alt="thumbnail"
