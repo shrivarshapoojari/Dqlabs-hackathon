@@ -14,7 +14,7 @@ const NewFooter = () => {
     <p className="font-bold">
       GrameenShakthi.org <br/>Empowering India
     </p> 
-    <p>Copyright © 2023 - All right reserved</p>
+    <p>Copyright © 2024 - All right reserved</p>
   </aside> 
   <nav>
     <div className="grid grid-flow-col gap-4">
