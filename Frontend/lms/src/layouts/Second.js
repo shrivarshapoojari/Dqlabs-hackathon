@@ -1,3 +1,5 @@
+ 
+
 import React from 'react'
 import {useSelector } from 'react-redux/es/hooks/useSelector'
 import { BsPersonCircle } from 'react-icons/bs';
@@ -35,11 +37,11 @@ const Second = ({children}) => {
     }
 
   return (
-    <div className='min-h-[90vh] bg-slate-900 '>
+    <div className='min-h-[90vh] bg-slate-900 min-w-[500px] '>
     <div className="navbar bg-base-100 bg-slate-900">
   <div className="flex-1">
     
-    <Link className='btn btn-ghost text-xl text-purple-500 font-semibold border border-purple-500 hover:font-bold hover:border-purple-600 ' to='/'>GraminShakthi</Link>
+    <Link className='btn btn-ghost text-xl text-purple-500 font-semibold border border-purple-500 hover:font-bold hover:border-purple-600 ' to='/'>MERNERA</Link>
   </div>
   <div className="flex-none">
     <div className="dropdown dropdown-end">
@@ -74,9 +76,8 @@ const Second = ({children}) => {
         </li>
         <li> <Link to='/about' className='justify-between text-white hover:text-white hover:bg-purple-500'>About Us</Link> </li>
         <li> <Link to='/contact' className='justify-between text-white hover:text-white hover:bg-purple-500'>Contact Us</Link> </li>
-        <li><Link to='/courses' className='justify-between text-white hover:text-white hover:bg-purple-500'>Courses</Link></li>
         <li><Link to='/job' className='justify-between text-white hover:text-white hover:bg-purple-500'>Find a Job</Link></li>
-
+        <li><Link to='/courses' className='justify-between text-white hover:text-white hover:bg-purple-500'>Courses</Link></li>
         {
             isLoggedIn && role=="ADMIN" &&
             (<li>
