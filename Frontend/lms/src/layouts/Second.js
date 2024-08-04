@@ -41,7 +41,7 @@ const Second = ({children}) => {
     <div className="navbar bg-base-100 bg-slate-900">
   <div className="flex-1">
     
-    <Link className='btn btn-ghost text-xl text-purple-500 font-semibold border border-purple-500 hover:font-bold hover:border-purple-600 ' to='/'>MERNERA</Link>
+    <Link className='btn btn-ghost text-xl text-purple-500 font-semibold border border-purple-500 hover:font-bold hover:border-purple-600 ' to='/'>Gramin Shakthi</Link>
   </div>
   <div className="flex-none">
     <div className="dropdown dropdown-end">
