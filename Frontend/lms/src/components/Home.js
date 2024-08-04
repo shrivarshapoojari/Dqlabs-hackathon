@@ -12,7 +12,7 @@ const Home = () => {
                 Find Out best <span className="text-purple-500 font-bold"> Online Courses </span>
             </h1>
             <p className="text-xl text-gray-200">
-                We have a laarge library of courses taught by industry experts and qualified faculties at a affordable price.
+            Gramin Shakthi is a low-cost platform designed to equip rural populations with relevant life and career skills, fostering financial independence and sustainable growth. Through affordable and interactive training, we bridge the skills gap and enhances employability.
             </p>
             <div className="space-x-6">
                 <Link to ='/courses'>

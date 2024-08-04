@@ -17,7 +17,7 @@ const Aboutus = () => {
 
                      </h1>
                      <p className='text-xl text-gray-200'>
-                     Welcome to GRAMINSHAKTHI, where learning meets innovation! Our online platform is dedicated to providing high-quality courses that empower you to master new skills and achieve your goals. With expert instructors, interactive content, and a supportive community, we strive to make learning accessible and enjoyable. Join us on your journey to personal and professional growth!
+                     Welcome to GraminShakthi, where learning meets innovation! Our online platform is dedicated to providing high-quality courses that empower you to master new skills and achieve your goals. With expert instructors, interactive content, and a supportive community, we strive to make learning accessible and enjoyable. Join us on your journey to personal and professional growth!
                      </p>
                 </section>
                 <div className='w-1/2'>
